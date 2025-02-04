@@ -1,7 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
 test.describe('API Testing - To-Do List', () => {
-  
   test('GET /todos - Verify list of to-dos', async ({ request }) => {
     const response = await request.get('/todos');
     expect(response.status()).toBe(200);
@@ -45,12 +44,4 @@ test.describe('API Testing - To-Do List', () => {
     const response = await request.get('/todos/99999');
     expect(response.status()).toBe(404);
   });
-
-  /*const startTime = Date.now();
-  const response = await request.get('/todos');
-  const endTime = Date.now();
-  expect(endTime - startTime).toBeLessThan(1000); // Ensure response time < 1s*/
-
-
 });
-

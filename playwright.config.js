@@ -1,14 +1,5 @@
 const { defineConfig, devices } = require('@playwright/test');
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config({ path: path.resolve(__dirname, '.env') });
-
-/**
- * @see https://playwright.dev/docs/test-configuration
- */
 module.exports = defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -20,7 +11,10 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html', // HTML report
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }], // HTML report
+    ['json', { outputFile: 'playwright-report/results.json' }] // JSON report
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -31,6 +25,11 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    /* You can also define other global configurations here, like HTTP request handling */
+    headers: {
+      'Content-Type': 'application/json',
+    },
   },
 
   /* Configure projects for major browsers */
@@ -49,10 +48,15 @@ module.exports = defineConfig({
     },
   ],
 
-  /* Run your local dev server before starting the tests */
+  /* Optionally, you can add the webServer block if you need to spin up a server before running tests. */
   // webServer: {
   //   command: 'npm run start',
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+
+  /* Custom environment variables or path settings */
+  env: {
+    TEST_ENV: process.env.TEST_ENV || 'dev', // Example of using environment variables
+  }
 });
