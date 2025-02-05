@@ -8,16 +8,19 @@ This project demonstrates comprehensive **API testing** using **Playwright**, fe
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [API Testing](#api-testing)
-  - [API Chaining](#api-chaining)
-- [Performance Testing](#performance-testing)
-- [Continuous Integration with Jenkins](#continuous-integration-with-jenkins)
+- [Prerequisites](#🔧-prerequisites)
+- [Project Structure](#📂-project-structure)
+- [Installation](#🔄-installation)
+- [API Testing](#📊-api-testing-with-api-chaining)
+  - [API Chaining]
+- [Performance Testing](#💡-performance-testing)
+- [CI/CD Integration](#🚀-ci/cd-integrations)
+  - [GitHub Actions]
+  - [Jenkins Integration]
+- [How Jenkins Helps](#🚀-ci/cd-integrations)
 - [Running Tests](#running-tests)
+- [How Jenkins Helps](#🚀-how-jenkins-helps)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -68,7 +71,7 @@ This project demonstrates comprehensive **API testing** using **Playwright**, fe
      npx artillery run tests/performance-test.yml
      ```
 
-## 📊 API Chaining
+## 📊 API Testing with API Chaining
 
 API chaining ensures that responses from one request are used as inputs for subsequent requests. Example in `api-tests.spec.js`:
 
