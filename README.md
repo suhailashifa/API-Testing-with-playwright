@@ -6,6 +6,21 @@ This project demonstrates comprehensive **API testing** using **Playwright**, fe
 - **Performance Testing**: Utilizing **Artillery** for load and performance testing.
 - **CI/CD Integration**: Automated testing with **GitHub Actions** and **Jenkins**.
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [API Testing](#api-testing)
+  - [API Chaining](#api-chaining)
+- [Performance Testing](#performance-testing)
+- [Continuous Integration with Jenkins](#continuous-integration-with-jenkins)
+- [Running Tests](#running-tests)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
 ## 🔧 Prerequisites
 
 - **Node.js** (v14 or later)
