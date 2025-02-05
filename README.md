@@ -203,11 +203,6 @@ Whenever you make code changes, follow these steps to push updates to your repos
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## 💪 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 Happy Testing! 🚀📊
 
