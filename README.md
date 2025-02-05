@@ -8,18 +8,18 @@ This project demonstrates comprehensive **API testing** using **Playwright**, fe
 
 ## Table of Contents
 
-- [Prerequisites](#🔧-prerequisites)
-- [Project Structure](#📂-project-structure)
-- [Installation](#🔄-installation)
-- [API Testing](#📊-api-testing-with-api-chaining)
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [API Testing](#api-testing-with-api-chaining)
   - [API Chaining]
-- [Performance Testing](#💡-performance-testing)
-- [CI/CD Integration](#🚀-ci/cd-integrations)
-  - [GitHub Actions]
-  - [Jenkins Integration]
-- [How Jenkins Helps](#🚀-ci/cd-integrations)
+- [Performance Testing](#performance-testing)
+- [CI/CD Integration](#ci/cd-integrations)
+  - GitHub Actions
+  - Jenkins Integration
+- [How Jenkins Helps](#ci/cd-integrations)
 - [Running Tests](#running-tests)
-- [How Jenkins Helps](#🚀-how-jenkins-helps)
+- [How Jenkins Helps](#how-jenkins-helps)
 - [Contributing](#contributing)
 
 ---
@@ -223,4 +223,3 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 
 
 Happy Testing! 🚀📊
-
